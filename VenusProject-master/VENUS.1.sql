@@ -539,6 +539,9 @@ CREATE TABLE `publicacion` (
 -- Dumping data for table `publicacion`
 --
 
+ALTER TABLE publicacion DROP fecha;
+alter table publicacion add fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP ;
+
 LOCK TABLES `publicacion` WRITE;
 /*!40000 ALTER TABLE `publicacion` DISABLE KEYS */;
 /*!40000 ALTER TABLE `publicacion` ENABLE KEYS */;
